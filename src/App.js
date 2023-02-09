@@ -1,15 +1,17 @@
 import React from "react";
 import Nav from "./component/Nav";
 import {Routes, Route} from "react-router-dom"
-import Login from "./pages/Login";
+import Getstart from "./pages/Getstart"
+import Home from "./pages/Home";
 import Sign from "./pages/Sign";
 function App() {
   return (
   <>
   <Nav/>
    <Routes>
-    <Route path="/Login" element={<Login/>}/>
+    <Route path="/getstart" element={<Getstart/>}/>
     <Route path="/Sign" element={<Sign/>}/>
+    <Route path="/home" element={<Home/>}/>
   </Routes>
   </>
   );

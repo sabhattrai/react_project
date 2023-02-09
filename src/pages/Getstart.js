@@ -1,7 +1,7 @@
 import React from 'react'
 import hh from "../component/hh.jpg"
 
-const Login = () => {
+const Getstart = () => {
   return (
    <section className='bg-gray-50 min-h-screen flex items-center justify-center '>
       <div className='bg-gray-100 flex shadow-lg max-w-3xl p-5'>
@@ -46,4 +46,4 @@ const Login = () => {
    </section>
   )
 }
-export default Login
+export default Getstart

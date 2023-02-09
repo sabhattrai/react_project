@@ -1,13 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 const Nav = () => {
-    let Links = [
-        { name: "Home", Link: "/" },
-        { name: "Services", Link: "/" },
-        { name: "About", Link: "/" },
-        { name: "Blog", Link: "/" }
-    ];
-
     let [open, setOpen] = useState(false);
     return (
         <div className="shadow-md w-full fixed top-0 left-0">
@@ -23,13 +17,18 @@ const Nav = () => {
                     <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                 </div>
                 <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-250 ease-in ${open ? 'top-20' : 'top-[-490px]'}`}>
-                    {
-                        Links.map((Link) => (
-                            <li key={Link.name} className="md:ml-8 text-xl md:my-0 my-7 ">
-                                <a href={Link.Link} className="text-gray-800 hover:text-gray-400 duration-250 ">{Link.name}</a>
+                             <Link to='Home'>
+                            <li className="md:ml-8 text-xl md:my-0 my-7 ">
+                                <p className="text-gray-800 hover:text-gray-400 duration-250 ">Home</p>
                             </li>
-                        ))
-                    }
+                            </Link>
+                            <li className="md:ml-8 text-xl md:my-0 my-7 ">
+                                <p className="text-gray-800 hover:text-gray-400 duration-250 ">Services</p>
+                            </li>
+                            <li className="md:ml-8 text-xl md:my-0 my-7 ">
+                                <p className="text-gray-800 hover:text-gray-400 duration-250 ">About</p>
+                            </li>
+                        
                     <Button children="get start" />
                 </ul>
             </div>
