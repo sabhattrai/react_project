@@ -1,11 +1,9 @@
 import React from 'react'
-import Nav from '../component/Nav'
 
 function Home() {
   return (
     <div>
-        <Nav/>
-
+        <h1 className='relative items-center justify-center'>the Home page</h1>
     </div>
   )
 }
