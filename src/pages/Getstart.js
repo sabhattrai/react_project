@@ -3,7 +3,7 @@ import hh from "../component/hh.jpg"
 
 const Getstart = () => {
   return (
-   <section className='bg-gray-50 min-h-screen flex items-center justify-center '>
+   <section className='bg-gray-250 min-h-screen flex items-center justify-center '>
       <div className='bg-gray-100 flex shadow-lg max-w-3xl p-5'>
         <div className='md:w-1/2 px-16'>
           <h2 className='font-bold text-2xl text-[#002074]'>login</h2>
@@ -35,7 +35,7 @@ const Getstart = () => {
 </svg>login with google</button>
 <p className='mt-5 text-xs border-b py-4 border-gray-400'>forgot your password?</p>
          <div className='mt-3 text-xs flex justify-between items-center'>
-          <p>if you don't have an account..</p>
+          <p className='text-xs'>if you don't have an account..</p>
           <button className='py-2 px-5 bg-white rounded-xl'>Register</button>
          </div>
         </div>
